@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1122" height="1402" viewBox="0 0 1122 1402">
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eeeae5"/>
+      <stop offset=".52" stop-color="#dce1e9"/>
+      <stop offset="1" stop-color="#c7cfdb"/>
+    </linearGradient>
+    <radialGradient id="softlight" cx=".72" cy=".22" r=".74">
+      <stop offset="0" stop-color="#fff" stop-opacity=".58"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="54" height="54" patternUnits="userSpaceOnUse">
+      <path d="M54 0H0V54" fill="none" stroke="#29313d" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1122" height="1402" fill="url(#surface)"/>
+  <rect width="1122" height="1402" fill="url(#softlight)"/>
+  <rect width="1122" height="1402" fill="url(#grid)"/>
+  <rect x="38" y="38" width="1046" height="1326" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>
+  <text x="76" y="106" fill="#30343b" fill-opacity=".58" font-family="Arial,sans-serif" font-size="22" letter-spacing="3">FIG. 01 / PORTRAIT</text>
+  <g fill="#818c9c" fill-opacity=".23">
+    <circle cx="561" cy="565" r="152"/>
+    <path d="M267 1170c18-208 135-336 294-336s276 128 294 336v73H267z"/>
+  </g>
+  <g fill="#fff" fill-opacity=".94" font-family="Arial,'Microsoft YaHei',sans-serif" text-anchor="middle">
+    <text x="561" y="839" font-size="100" font-weight="700">王晓玉</text>
+  </g>
+  <text x="1044" y="1315" text-anchor="end" fill="#313740" fill-opacity=".68" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="22" letter-spacing="1">本人照片待补充</text>
+</svg>
