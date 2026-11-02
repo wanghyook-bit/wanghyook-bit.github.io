@@ -1603,3 +1603,21 @@
       .capability-intro p,.work-head p,.showcase-head p { white-space:normal; }
     }
   
+
+/* Centered Vibe Coding cover inspired by the case-study hero. */
+.project-card .vibe-thumb { position: relative; isolation: isolate; background: #e8edf8; }
+.vibe-thumb-art { position: absolute; inset: 0; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: clamp(4px, .75vw, 10px); padding: 12px 5%; text-align: center; background: radial-gradient(circle at 24% 52%, rgba(121,219,255,.62), transparent 28%), radial-gradient(circle at 75% 38%, rgba(166,125,255,.52), transparent 34%), linear-gradient(120deg,#f5f8ff 2%,#e8effe 52%,#dfe3ff 100%); transition: transform .55s cubic-bezier(.2,.75,.2,1); }
+.project-card:hover .vibe-thumb-art,.project-card:focus-visible .vibe-thumb-art { transform: scale(1.025); }
+.vibe-thumb-art::before { position: absolute; z-index: -1; content: ""; width: 70%; aspect-ratio: 1; border: 1px solid rgba(111,126,214,.2); border-radius: 50%; transform: rotate(-12deg) scaleY(.45); }
+.vibe-thumb-orbit { position: absolute; z-index: -1; width: 72%; height: 70%; border: 1px solid rgba(103,125,226,.18); border-radius: 50%; transform: rotate(-10deg); }
+.vibe-thumb-number { position: absolute; z-index: -1; right: 7%; top: -15%; color: rgba(93,105,193,.07); font-size: clamp(112px,20vw,220px); font-weight: 800; line-height: 1; letter-spacing: -.08em; }
+.vibe-thumb-mark { width: clamp(28px,4vw,48px); height: clamp(28px,4vw,48px); display: grid; place-items: center; border: 1px solid rgba(255,255,255,.92); border-radius: 14px; background: rgba(255,255,255,.88); box-shadow: 0 8px 20px rgba(79,84,185,.15); }
+.vibe-thumb-mark svg { width: 80%; fill: #4858f7; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 2px 2px rgba(47,69,255,.22)); }
+.vibe-thumb-kicker { padding: 3px 8px; border: 1px solid rgba(60,71,106,.12); border-radius: 99px; background: rgba(255,255,255,.58); color: #555d70; font-size: clamp(7px,.66vw,9px); font-weight: 700; letter-spacing: .03em; }
+.vibe-thumb-art h4 { max-width: 96%; margin: 0; display: flex; flex-direction: column; gap: 1px; color: #151923; font-size: clamp(18px,2vw,27px); line-height: 1.14; font-weight: 760; letter-spacing: -.035em; }
+.vibe-thumb-art h4 span { color: #4324ec; font-size: 1.22em; }
+.vibe-thumb-art h4 strong { font-weight: 750; }
+.vibe-thumb-art p { max-width: 78%; margin: 2px 0 0; color: #697187; font-size: clamp(8px,.78vw,10px); line-height: 1.55; }
+.vibe-thumb-tags { display: flex; gap: 5px; margin-top: 2px; }
+.vibe-thumb-tags span { padding: 3px 7px; border: 1px solid rgba(87,97,124,.13); border-radius: 99px; background: rgba(255,255,255,.52); color: #667087; font-size: clamp(6px,.65vw,8px); }
+.vibe-thumb-footer { position: absolute; left: 12px; bottom: 9px; color: rgba(47,54,72,.53); font-size: clamp(5px,.6vw,7px); font-weight: 700; letter-spacing: .025em; }

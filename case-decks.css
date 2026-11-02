@@ -250,12 +250,6 @@ html:has(body.case-page) { scroll-behavior: smooth; scroll-padding-top: 84px; }
 .case-footer a:hover { color: var(--case-accent); }
 .case-motion-ready .case-hero-content { animation: case-hero-enter .75s cubic-bezier(.2,.72,.18,1) both; }
 .case-motion-ready .case-hero-foot { animation: case-hero-enter .7s .12s cubic-bezier(.2,.72,.18,1) both; }
-.case-motion-ready .case-cover { opacity: 0; transform: translateY(28px) scale(.99); transition: opacity .72s ease, transform .72s cubic-bezier(.2,.72,.18,1); }
-.case-motion-ready .case-cover.is-visible { opacity: 1; transform: translateY(0) scale(1); }
-.case-motion-ready .case-chapter .chapter-content > h2, .case-motion-ready .case-chapter .chapter-content > p { opacity: 0; transform: translateY(18px); transition: opacity .65s ease, transform .65s cubic-bezier(.2,.72,.18,1); }
-.case-motion-ready .case-chapter.is-visible .chapter-content > h2, .case-motion-ready .case-chapter.is-visible .chapter-content > p { opacity: 1; transform: translateY(0); }
-.case-motion-ready .case-chapter .case-slide { opacity: 0; transform: translateY(28px) scale(.99); transition: opacity .72s ease, transform .72s cubic-bezier(.2,.72,.18,1); }
-.case-motion-ready .case-chapter .case-slide.is-visible { opacity: 1; transform: translateY(0) scale(1); }
 @keyframes case-hero-enter { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: translateY(0); } }
 @media (max-width: 1360px) {
   .case-topbar { grid-template-columns: minmax(140px,1fr) auto auto; }
@@ -318,3 +312,8 @@ html:has(body.case-page) { scroll-behavior: smooth; scroll-padding-top: 84px; }
   .case-slide-list { gap: 12px; }
   .case-slide { padding: 4px; }
 }
+
+.case-slide--segmented { padding: 0; }
+.case-slide-slices { display: grid; gap: 0; }
+.case-slide-slices .case-image-button { margin: 0; border: 0; border-radius: 0; cursor: zoom-in; }
+.case-slide-slices .case-image-button img { display: block; width: 100%; height: auto; }

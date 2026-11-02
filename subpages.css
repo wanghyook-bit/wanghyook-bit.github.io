@@ -190,3 +190,6 @@ html { scroll-padding-top: 90px; scroll-behavior:auto; }
 @media (prefers-reduced-motion:reduce) {
   *,*::before,*::after { scroll-behavior:auto !important; transition-duration:.01ms !important; animation-duration:.01ms !important; }
 }
+
+.resume-focus-tags { margin-top:18px; display:flex; flex-wrap:wrap; gap:8px; }
+.resume-focus-tags span { min-height:29px; padding:5px 11px; display:inline-flex; align-items:center; border:1px solid var(--line); border-radius:999px; color:var(--muted); font-size:var(--fs-meta,12px); }
